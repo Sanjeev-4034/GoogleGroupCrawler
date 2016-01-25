@@ -12,7 +12,7 @@
 
 ## Description
 
-This is a `Bash` script to download all `mbox` files from
+This is a `Bash` script to download required number of  `mbox` files from
 any Google group. Private groups require you to load cookies from file.
 
 ## Installation
@@ -48,6 +48,12 @@ If you want the script to re-scan the whole archive, try
     _FORCE="true" ./crawler.sh -sh
 
 or you simply delete all files under `$_GROUP/` directory.
+************
+To limit the number of topic to be downloaded we have used 
+wc command along with head command.
+Note that if you want to download say for example three most discussed topic among the group 
+your head option should be three+1=four.
+Because inorder to avoid total from the count.
 
 ## Private group
 
